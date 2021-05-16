@@ -1,0 +1,28 @@
+if game.PlaceId == 4734949248 and _G.VCheck2 == "v0.02" then
+--nothing
+else
+    if game.PlaceId == 4734949248 then
+    local function callback(Text)
+        if Text == "Re-Execute" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/DSRPG2%20Main%20Gui"))()
+			elseif Text == "ReJoin" then
+			local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(game.PlaceId, plr)
+        end
+    end
+    
+    local bf = Instance.new("BindableFunction")
+    bf.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification", {
+Title = "VIP DSRPG 2 Gui";
+Text = "New Version Of The Gui Detected, Please Re-Execute The Script Or Rejoin",
+Icon = "rbxassetid://6753829832";
+Duration = 8;
+Button1 = "Re-Execute";
+Button2 = "ReJoin";
+Callback = bf
+})
+end
+end
