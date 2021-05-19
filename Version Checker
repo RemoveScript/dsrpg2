@@ -1,4 +1,4 @@
-if game.PlaceId == 4734949248 and _G.VCheck3 == "v0.02" then
+if game.PlaceId == 4734949248 and _G.VCheck3 == "v0.03" then
 --nothing
 else
     if game.PlaceId == 4734949248 then
