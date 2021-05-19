@@ -4,7 +4,7 @@ else
     if game.PlaceId == 4734949248 then
     local function callback(Text)
         if Text == "Re-Execute" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/DSRPG2/master/DSRPG2%20Main%20Gui"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RemoteScript/dsrpg2/main/VIP.lua"))()
 			elseif Text == "ReJoin" then
 			local tpservice= game:GetService("TeleportService")
 local plr = game.Players.LocalPlayer
